@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zafely Water</title>
+    
+    
+<link rel="stylesheet" type="text/css" media="screen" href="Zafely%20Water%20Archivos/normalize.css"><link rel="stylesheet" type="text/css" media="screen" href="Zafely%20Water%20Archivos/estilos.css"></head>
+<body>
+    <header>
+        <section class="partelogo">
+            <a href="http://127.0.0.1:5500/index.html">
+                <img src="Zafely%20Water%20Archivos/Logosinfondo.png" alt="ZW" class="logoZW">
+            </a>
+
+            <p class="slogan">¡Por un futuro mejor!</p>
+        </section>
+
+        <section class="partepaginas">
+            <div class="barra">
+                <nav class="navegacion">
+                    <a href="http://127.0.0.1:5500/somos.html">¿Quienes somos?</a>
+                    <a href="http://127.0.0.1:5500/servicios.html">Servicios</a>
+                    <a href="http://127.0.0.1:5500/clientes.html">Clientes</a>
+                    <a href="http://127.0.0.1:5500/contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <section class="contenido">
+        <div class="contenidomitad">
+            <h1 class="mensajeinicio">Espera nuestra aplicación</h1>
+            <img src="Zafely%20Water%20Archivos/Inicio1.jpeg" alt="aplicacion" class="aplicacioninicio">
+
+            <h2>Proximamente disponible en:</h2>
+            <img src="Zafely%20Water%20Archivos/Google.png" alt="google" class="google">
+            <img src="Zafely%20Water%20Archivos/Apple.png" alt="apple" class="apple">
+        </div>
+    </section>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
